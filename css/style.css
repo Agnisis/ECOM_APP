@@ -2,7 +2,7 @@
 
 
 
-/* global css */
+/************************* global css *********************/
 
 
 * {
@@ -70,6 +70,18 @@ body {
 }
 
 
+
+/***********XXXXXXXXXXXXXXXXX******** global css ****XXXXXXXXXXXXXXXX*****************/
+
+
+
+
+
+
+
+
+
+
 /************************ header style**********************************8 */
 
 #header {
@@ -128,6 +140,21 @@ body {
 
 
 
+/*******XXXXXXXXXX********* header style*********8XXXXXXXXXXX*****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ***************************HERO********************************/
 
@@ -175,6 +202,29 @@ body {
 }
 
 
+
+
+
+
+
+/* ****************XXXXXXXXXXXXXXXXX******HERO**********XXXXXXXXXXXXXXX*************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ***************************FEATURE********************************/
 
 
@@ -185,11 +235,6 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-
-
-
-
 
 
 #feature .feature-box {
@@ -246,7 +291,21 @@ body {
     background-color: #fff2e5;
 }
 
-/* ***************************PRODUCT*******************************88 */
+
+/* ************XXXXXXXXXXXXX FEATURE XXXXXXXXXXX*******  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ***************************PRODUCT******************************* */
 
 #product1 .pro-container {
     display: flex;
@@ -325,6 +384,11 @@ body {
     right: 20px;
 }
 
+/* **************XXXXXXXXXXXXXX**PRODUCT1*XXXXXXXXXXXXXX*****************  */
+
+
+
+/* **************************BANNEER**************************  */
 
 #banner {
 
@@ -502,6 +566,21 @@ body {
 
 }
 
+/* ***********XXXXXXXXXXXXXXXXXXXXXXX*BANNEER*XXXXXXXXXXXXXXXXXXX*****  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* **************************NEWSLETTER**************************  */
+
 #newsletter {
 
     display: flex;
@@ -573,6 +652,27 @@ body {
     transition: all 0.2s ease;
     cursor: pointer;
 }
+/* **************XXXXXXXXXXXXXXXXX NEWSLETTER XXXXXXXXXXXXXXXXXX******************  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **************************FOOTER**************************  */
+
 
 
 
@@ -650,3 +750,25 @@ footer a:hover {
     
 
 }
+
+
+/* ********XXXXXXXXXXXXXXXXX*******FOOTER*******XXXXXXXXXXXXXXXXXX********  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **************************responsive design**************************  */
