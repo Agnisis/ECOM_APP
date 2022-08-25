@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
@@ -9,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'spartan', sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
 
 h1 {
@@ -96,9 +97,11 @@ body {
     top: 0;
     left: 0%;
 }
-#mobile{
+
+#mobile {
     display: none;
 }
+
 #navbar {
     display: flex;
     align-items: center;
@@ -141,6 +144,12 @@ body {
 }
 
 
+#close {
+    display: none;
+}
+
+
+
 
 /*******XXXXXXXXXX********* header style*********8XXXXXXXXXXX*****/
 
@@ -169,10 +178,10 @@ body {
 
 
 #hero {
-    background-image: url("../img/hero4.png");
+    background-image: url("../img/heromain.png");
     height: 100vh;
     width: 100%;
-    background-position: top 25% right 0%;
+    background-position:  right 0%;
     background-size: cover;
     padding: 0 80px;
     display: flex;
@@ -182,17 +191,28 @@ body {
 }
 
 #hero h4 {
-    padding-bottom: 15px;
+    
+    padding-top: 60px;
+    color: rgb(218, 130, 130);
 }
 
 #hero h1 {
-    color: #088178;
+    color: #e9b60d;
+}
+#hero h2 {
+    color: #f7f8f5;
+    font-size: 30px;
+}
+#hero p{
+    color: #d2d6c8;
+    font-size: 30px;
 }
 
 #hero button {
     background-image: url(../img/button.png);
-    background-color: transparent;
-    color: #088178;
+    background-color:transparent;
+    filter: invert(60%) sepia(30%) saturate(30007%) hue-rotate(20deg) brightness(100%) contrast(50%);
+    color: #6c2de0;
     border: 0;
     padding: 14px 80px 15px 65px;
     background-repeat: no-repeat;
@@ -439,8 +459,10 @@ body {
     background-image: url("../img/banner/b17.jpg");
     min-width: 580px;
     height: 50vh;
+   margin:0 30px ;
     background-size: cover;
     background-position: center;
+
 
 }
 
@@ -459,9 +481,8 @@ body {
 
 #sm-banner {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 #sm-banner h4 {
@@ -480,7 +501,7 @@ body {
     color: #fff2e5;
     font-size: 14px;
     font-weight: 500;
-    padding: 10px;
+    padding: 30px;
 }
 
 .white {
@@ -535,7 +556,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 80px;
+    padding: 70px  70px;
 }
 
 .banner-box-2 {
@@ -779,34 +800,234 @@ footer a:hover {
 
 
 @media(max-width:799px) {
+
+    .section-p1 {
+        padding: 40px;
+    }
+
     #navbar {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         position: fixed;
-        top: 0px;
+        top: 0;
         right: -300px;
-        height: 100vh;
+        height: 500px;
         width: 300px;
-        background-color: #d1dadf;
+        background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
         padding: 80px 0 0 10px;
+        transition: 0.3s;
 
     }
 
-    #navbar li{
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
         margin-bottom: 25px;
     }
-    #mobile{
+
+    #mobile {
         display: flex;
         align-items: center;
     }
-    #mobile i{
+
+    #mobile i {
         color: #1a0b0b;
         font-size: 24px;
         padding-left: 20px;
     }
+
+    #close {
+        position: absolute;
+        display: initial;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #bag {
+        display: none;
+    }
+
+
+
+    #hero {
+
+        height: 45vh;
+
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+
+    }
+
+    #feature {
+
+        justify-content: center;
+
+    }
+
+    #feature .feature-box {
+
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+
+        justify-content: center;
+
+    }
+
+    #product1 .pro {
+
+        margin: 15px;
+
+    }
+
+    #banner {
+
+        height: 20vh;
+
+    }
+
+    #sm-banner .banner-box {
+
+
+        min-width: 100%;
+        height: 30vh;
+
+    }
+
+    #banner-3 {
+
+        padding: 0 40px;
+    }
+
+    #banner-3 .banner-box {
+
+        width: 28%;
+
+
+    }
+
+    .banner-box-2 {
+
+        width: 20%;
+
+
+
+    }
+
+    #newsletter .form {
+    
+        width: 70%;
+        
+    }
+}
+
+@media(max-width:477px)
+{
+    
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        
+        padding: 10px 30px;
+       
+}
+
+
+#hero {
+  
+    padding: 0 20px;
+    background-position: 55%;
     
 }
 
+#hero h4 {
+   
+    padding-top: 100px;
+    color: rgb(165, 115, 202);
+}
+
+#hero h2 {
+   
+    font-size: 22px;
+   
+    
+}
+
+#hero h1{ 
+    font-size: 22px;
+    
+}
+#hero p{ 
+    font-size: 18px;
+    
+}
+#feature .feature-box {
+    width: 150px;
+    
+    margin: 0 0 15px 0;
+}
+#feature{
+    justify-content: space-between;
+}
+
+#product1 .pro {
+    width: 100%;
+    
+}
+
+
+#banner {
+   
+    height: 40vh;
+   
+}
+
+#sm-banner .banner-box {
+  
+    height: 40vh;
+}
+#sm-banner .banner-box-2 {
+  
+    margin-top: 20px;
+}
+
+#banner-3 {
+    padding: 0 20px;
+}
+
+#banner-3 .banner-box {
+    width: 100%;
+}
+
+.banner-box-2 {
+    width: 100%;
+}
+
+.banner-box-3 {
+    width:100%;
+}
+
+#newsletter .form{
+    width: 100%;
+}
+
+.newstext h4 {
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+}
+.newstext p {
+    color: rgb(57, 209, 230);
+    font-weight: 600;
+    font-size:18px;
+}
+}
